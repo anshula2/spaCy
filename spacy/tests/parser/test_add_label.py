@@ -9,7 +9,7 @@ from spacy.gold import GoldParse
 from spacy.vocab import Vocab
 from spacy.tokens import Doc
 from spacy.pipeline import DependencyParser, EntityRecognizer
-from spacy.util import fix_random_seed
+#from spacy.util import fix_random_seed
 
 
 @pytest.fixture
@@ -28,7 +28,7 @@ def test_init_parser(parser):
 
 
 def _train_parser(parser):
-    fix_random_seed(1)
+#    fix_random_seed(1)
     parser.add_label("left")
     parser.begin_training([], **parser.cfg)
     sgd = Adam(NumpyOps(), 0.001)

@@ -32,8 +32,8 @@ def test_simple_train():
 
 @pytest.mark.skip(reason="Test is flakey when run with others")
 def test_textcat_learns_multilabel():
-    random.seed(5)
-    numpy.random.seed(5)
+#    random.seed(5)
+#    numpy.random.seed(5)
     docs = []
     nlp = Language()
     letters = ["a", "b", "c"]
